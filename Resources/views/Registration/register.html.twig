@@ -1,0 +1,14 @@
+{% extends "YdleUserBundle::layout.html.twig" %}
+
+{% block title '{{ "page.register.title" | trans({}, "YdleUserBundle") }}' %}
+
+{% block fos_user_content %}
+<div class="row center-block">
+    <div style="text-align:center;">
+        <img src="{{ asset('bundles/ydlehub/images/ydleLogo.png') }}" />
+    </div>
+    <div class="center-block">
+    {% include "FOSUserBundle:Registration:register_content.html.twig" %}
+    </div>
+</div>
+{% endblock fos_user_content %}

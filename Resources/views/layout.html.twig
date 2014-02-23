@@ -1,0 +1,26 @@
+{% extends "YdleHubBundle::layout.html.twig" %}
+
+{% block title '{{ "page.login.title" | trans({}, "YdleUserBundle") }}' %}
+
+    
+{% block menu %}
+  <div class="masthead">
+    <h3 class="text-muted">{{ "ydle.title" | trans({}, "YdleHubBundle") }} - v{{ app_version }}</h3>
+  </div>
+{% endblock %}
+
+{% block body %}
+  <div class="body-content">
+    {% for flashMessage in app.session.flashbag.get('notice') %}
+        <div class="flash-message">
+            <em>Notice</em>: {{ flashMessage }}
+        </div>
+    {% endfor %}
+    {% block content %}
+        {% block fos_user_content %}
+        {% endblock fos_user_content %}
+    {% endblock %}
+  </div><!-- /.body-content -->
+
+  
+{% endblock %}
