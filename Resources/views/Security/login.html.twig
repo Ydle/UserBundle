@@ -15,13 +15,13 @@
         <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
 
         <div class="form-group">
-            <label class="col-sm-5 control-label" for="username">{{ "pseudo.title" | trans({}, "YdleUserBundle") }}</label>
+            <label class="col-sm-5 control-label" for="username">{{ "pseudo.title" | trans }}</label>
             <div class="col-xs-3">
                 <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" class="form-control" />
             </div>
         </div>
         <div class="form-group">
-            <label class="col-sm-5 control-label" for="password">{{ "password.title" | trans({}, "YdleUserBundle") }}</label>
+            <label class="col-sm-5 control-label" for="password">{{ "password.title" | trans }}</label>
             <div class="col-xs-3">
                 <input type="password" id="password" name="_password" required="required" class="form-control" />
             </div>
@@ -30,14 +30,14 @@
             <div class="col-sm-offset-5 col-sm-10">
                 <label for="remember_me">
                     <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
-                    {{ "remember.me.title" | trans({}, "YdleUserBundle") }}
+                    {{ "remember.me.title" | trans }}
                 </label>
             </div>
         </div>
         <div class="form-group">
             <div class="col-sm-offset-5 col-sm-10">
-              <input type="submit" id="_submit" name="_submit" value="{{ "action.connexion" | trans({}, "YdleUserBundle") }}"  class="btn btn-default" />
-              <a href="{{ path('fos_user_registration_register')}}">{{ "action.create.account" | trans({}, "YdleUserBundle") }}</a>
+              <input type="submit" id="_submit" name="_submit" value="{{ "action.connexion" | trans }}"  class="btn btn-default" />
+              <a href="{{ path('fos_user_registration_register')}}">{{ "action.create.account" | trans }}</a>
             </div>
         </div>
 

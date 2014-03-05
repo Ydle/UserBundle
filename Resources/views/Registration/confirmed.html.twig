@@ -1,6 +1,6 @@
 {% extends "YdleUserBundle::layout.html.twig" %}
 
-{% block title '{{ "page.confirmed.title" | trans({}, "YdleUserBundle") }}' %}
+{% block title "page.confirmed.title" | trans  %}
 
 {% block fos_user_content %}
 <div class="row center-block">
@@ -8,8 +8,8 @@
         <img src="{{ asset('bundles/ydleihm/images/ydleLogo.png') }}" />
     </div>
     <div class="center-block" style="text-align:center;">
-        <p>{{ "registration.completed.title" | trans({}, "YdleUserBundle") }}<br/>
-            <a href="{{ path('fos_user_security_login') }}">{{ "login.title" | trans({}, "YdleUserBundle") }}</a>
+        <p>{{ "registration.completed.title" | trans }}<br/>
+            <a href="{{ path('fos_user_security_login') }}">{{ "login.title" | trans }}</a>
         </p>
     <a href="">
     </div>

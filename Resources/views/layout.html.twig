@@ -1,11 +1,11 @@
 {% extends "YdleHubBundle::layout.html.twig" %}
 
-{% block title '{{ "page.login.title" | trans({}, "YdleUserBundle") }}' %}
+{% block title "page.login.title" | trans  %}
 
     
 {% block menu %}
   <div class="masthead">
-    <h3 class="text-muted">{{ "ydle.title" | trans({}, "YdleHubBundle") }} - v{{ app_version }}</h3>
+    <h3 class="text-muted">{{ "ydle.title" | trans }} - v{{ app_version }}</h3>
   </div>
 {% endblock %}
 
