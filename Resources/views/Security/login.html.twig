@@ -7,9 +7,6 @@
     <div>{{ error|trans }}</div>
 {% endif %}
 <div class="row center-block">
-    <div style="text-align:center;">
-        <img src="{{ asset('bundles/ydleihm/images/ydleLogo.png') }}" />
-    </div>
     <div class="center-block">
     <form action="{{ path("fos_user_security_check") }}" method="post" class="form-horizontal" role="form">
         <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
